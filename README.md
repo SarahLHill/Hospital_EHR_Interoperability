@@ -62,7 +62,7 @@ Hospital General Information - Centers for Medicare & Medicaid Services (CMS) :
 - **Data Types**: Mix of categorical (hospital name, geographics) and numerical (dates)
 - **Missing Data**: No missing values
 - **Total Rows:** 4593
-- **Total Columns:** 
+- **Total Columns:** 3
 
 #### Data Source - Promoting Interoperability
 
