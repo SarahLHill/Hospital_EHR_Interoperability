@@ -13,7 +13,8 @@ This project investigates how hospital characteristics and geographic factors in
 - Promoting Interoperability: Details hospitals’ engagement in the Medicare program aimed at advancing EHR-based data exchange.
 
 - Certified EHR Technology: Listing of all certified health information technology developers that have been successfully tested and certified by the ONC Health IT Certification program.
-- 
+-
+
 ## Dataset 1: Hospital General Information
 
 ***(hospital_general_info.csv)***
@@ -29,7 +30,6 @@ This project investigates how hospital characteristics and geographic factors in
 | `hospital_type`                     | Category of hospital (e.g., Acute Care, Critical Access, Psychiatric).                     |
 | `hospital_ownership`                | Entity that owns the hospital (e.g., Government - Federal, Proprietary, Voluntary Non-Profit). |  
 | `hospital_overall_rating`          | Overall hospital quality star rating (1 to 5 stars) as assessed by CMS.                    |
-
 
 #### Data Summary - Hospital General Information
 
@@ -55,7 +55,6 @@ Hospital General Information - Centers for Medicare & Medicaid Services (CMS) :
 | `facility_id`                                                 | Unique CMS Certification Number (CCN) identifying the hospital or facility.                           |
 | `facility_name`                                               | Official name of the hospital or healthcare facility.                                               |
 | `meets_criteria_for_promoting_interoperability_of_ehrs`       | Indicates whether the facility meets CMS-defined criteria for promoting EHR interoperability.  |
-
 
 #### Data Summary - Promoting Interoperability
 
