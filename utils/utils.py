@@ -6,6 +6,7 @@
 # In[ ]:
 
 import pandas as pd
+import matplotlib.pyplot as plt
 
 # ## Exploratory Data Analysis Function
 
@@ -54,4 +55,34 @@ def basic_eda(df: pd.DataFrame, show_head: bool = True, show_tail: bool = True, 
 # ## Plot Style Function
 
 # In[ ]:
+def compare_ratings_by_ehr(df, rating_col='hospital_overall_rating', developer_col='developer_name', product_col='product_name'):
+    """
+    Compares hospital ratings across EHR developers and products.
 
+    Parameters:
+    - df (pd.DataFrame): Merged dataset containing hospital ratings and EHR info.
+    - rating_col (str): Column name for hospital ratings.
+    - developer_col (str): Column name for EHR developer.
+    - product_col (str): Column name for EHR product.
+
+    Returns:
+    - pd.DataFrame: Summary table with average rating and hospital count per developer-product pair.
+    """
+    # Drop rows with missing ratings or developer/product info
+    filtered_df = df.dropna(subset=[rating_col, developer_col, product_col])
+
+    # Convert ratings to numeric if needed
+    filtered_df[rating_col] = pd.to_numeric(filtered_df[rating_col], errors='coerce')
+    # Group by developer and product
+    summary = (
+        filtered_df
+        .groupby([developer_col, product_col])
+        .agg(
+            average_rating=(rating_col, 'mean'),
+            hospital_count=(rating_col, 'count')
+        )
+        .reset_index()
+        .sort_values(by='average_rating', ascending=False)
+ )
+
+# In[ ]:
