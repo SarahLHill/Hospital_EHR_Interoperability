@@ -11,25 +11,26 @@ The goal of this project is to provide actionable insights into how certified EH
 
 ___
 
-#### Setup Instructions:
+### Setup Instructions:
 
 #### 1. Open a Terminal or Command Prompt
 
-On Windows: Press the Windows key, type cmd, and press Enter to open the Command Prompt.
-On Mac: Open the Terminal app (found in Applications > Utilities).
-On Linux: Open your Terminal from the Applications menu.
+- <ins>On Windows:</ins> Press the Windows key, type cmd, and press Enter to open the Command Prompt.
+
+- <ins>On Mac:</ins> Open the Terminal (Applications > Utilites)
+
+- <ins>On Linux:</ins> Open your Terminal from the Applications menu.
 
 #### 2. Clone the Project Repository
 This downloads the repository onto your local computer.
 
-Type the following commands into terminal:
+##### Type the following commands into terminal:
 
       git clone https://github.com/SarahLHill/Hospital_EHR_Interoperability
       cd EHR_Interoperability_Analysis
 
 #### 3. Create a Virtual Environment
-
-This will keep the project’s packages separate from other programs. 
+      This will keep the project’s packages separate from other programs. 
 
 ##### In the terminal window, enter:
 
